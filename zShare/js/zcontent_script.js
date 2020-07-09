@@ -518,7 +518,8 @@ function getSharePageInfo(request) {
     if (title !== null && title !== undefined && title !== '') {
         jsonobj.title = title;
     }
-    jsonobj.link = request.url;
+// CHANGED - Changed to window.location.href.split('#')[0] to split the anchor text
+    jsonobj.link = window.location.href.split('#')[0];
     description = $('meta[property="og:description"]').attr('content') || $('meta[name="description"]').attr('content') || $('meta[name="Description"]').attr('content') || ' ';
     if (description !== null && description !== undefined && title !== '') {
         jsonobj.content = description;
