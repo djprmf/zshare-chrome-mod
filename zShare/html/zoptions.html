@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>zShare Options</title>
+<style type="text/css">
+body { margin:0; padding:0; font-family: 'LatoRegular','ProximaNovaRegular',Arial,Helvetica,sans-serif; font-size: 16px; line-height: 20px; font-weight: 300; background: #fafafa; color:#333; }
+.socialLogo{ text-align:center; background:#fff; border-bottom:1px solid #ececec; box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.1); }
+.socialLogo img{ margin: 30px 0 0; cursor:pointer; }
+.socialLogo h1 { margin:0 0 30px; font-size:25px; font-weight:600; }
+.wrapper{ width:650px; margin:0 auto; overflow:hidden; }
+.wrapper .contentBox{ width: 610px; float:left; padding-bottom:50px; }
+.wrapper .contentBox h1{ font-size: 25px; padding: 60px 0 15px; margin:0; border-bottom: 1px dotted #ccc; line-height: 24px; color: black;}
+.wrapper .contentBox .optionList { border-bottom:1px dotted #ccc; padding-top:30px; overflow:hidden; }
+.wrapper .contentBox .optionList .option { float:left; width:100%; margin-bottom: 30px;}
+.wrapper .contentBox .optionList .option .detailText { float:left; width:550px; }
+.wrapper .contentBox .optionList .option .detailText h3 { float:left; margin:0; font-size:18px; font-weight:300; width: 100% }
+.wrapper .contentBox .optionList .option .detailText p { float:left; font-size:14px; margin:5px 0 0; color:gray; }
+.wrapper .contentBox .optionList .option label input { margin-right:15px; }
+.wrapper .contentBox .optionList .togglebtn { float:right; }
+.toggle-check { display: inline-block!important; float: left!important;position: absolute!important; margin-left: -9999px!important; visibility: hidden!important;}
+.toggle-check + label { display: block; position: relative; cursor: pointer; outline: none; user-select: none; }
+input.toggle-check-round + label { padding: 0; width: 45px; height: 24px; background-color: #d2d2d2; border-radius: 60px; transition: background 0.4s; }
+input.toggle-check-round + label:before, input.toggle-check-round + label:after { display: block!important; position: absolute!important; content: ""!important; }
+input.toggle-check-round + label:before { top: 0px!important; left: 0px!important; bottom: 0px!important; right: 0px!important; border-radius: 60px!important; transition: background 0.4s!important; }
+input.toggle-check-round + label:after { top: 1px!important; left: 1px!important; bottom: 0px!important; width: 20px!important; height: 20px!important; background-color: #ffffff!important; border-radius: 52px!important; transition: margin 0.4s, background 0.4s; border:1px solid #a9a9a9!important; }
+input.toggle-check-round:checked + label { background-color: #87cc7c!important; }
+input.toggle-check-round:checked + label:after { margin-left: 22px!important; background-color: #ffffff!important; border-color:#55ac47!important; }
+.zSharefooter { width: 100%;text-align: center;background-color: #fafafa;width: 100%;position: absolute; bottom: 20px;left: 0;right:0;top: auto;}
+.zSharenotes { padding-top: 20px; color: gray;font-size: 14px;}
+.hide{display: none;}
+</style>
+</head>
+	
+<body>
+<div class="socialLogo"><img src="../images/icon128.png" width="60" alt="" ><h1>zShare</h1></div>
+<div class="wrapper">
+    <div class="contentBox">
+    	<h1>zShare Preferences</h1>
+        <div class="optionList">
+								<div class="option" id="imageOverlay">
+									<div class="detailText">
+													<h3>Show zShare Button for images</h3>
+																<p>When enabled, you can directly share the images across social channels.</p>
+												</div>
+												<div class="togglebtn">
+													<input type="checkbox" class="toggle-check toggle-check-round" value="imageOverlays" id="imageOverlayToggleCheck">
+													<label for="imageOverlayToggleCheck"></label>
+												</div>
+								</div>
+            </div>
+						<div class='zSharenotes'>
+										<span>*Please refresh tabs for changes to take effect after you update your preferences.</span>
+						</div>
+    </div>
+    <div class='zSharefooter'>
+        <div style="font-size: 18px!important;margin-bottom: 10px;"><a href="https://www.zoho.com/privacy.html" target="_blank" style="color:#000">Privacy Policy</a></div>
+        <div>
+	       <span>               
+               <a href="https://www.zoho.com/social/zshare.html" target="_blank" style="color:#000;font-size:14px">Learn more</a> about zShare
+            </span>
+            <span style="font-size:14px;margin-left: 10px;">Got questions? Write to <a href="mailto:support@zohosocial.com" target="_top" style="color:#000">support@zohosocial.com</a></span>
+        </div>
+    </div>
+</div>
+<script src="../js/zoptions.js"></script>
+	
+</body>
+</html>
