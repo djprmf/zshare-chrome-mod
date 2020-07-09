@@ -1,6 +1,6 @@
 {
   "name" : "zShare",
-  "version" : "1.30",
+  "version" : "1.31",
   "description" : "zShare - The easiest way to share content on social media.",
   "icons": {
       "128": "images/icon128.png",
